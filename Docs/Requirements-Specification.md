@@ -15,6 +15,10 @@ Here are the system features I was thinking of including in the system.
 
 ### System features:
 1. Landing page
+-    Available services
+-            Ocean Import / Export
+             AIR FREIGHT FORWARDING
+             HOUSEHOLD GOODS & AUTOS
 2. Sign in form
 3. Login form or login section on the landing page for those who have accounts.
 4. Send Cargo: (This is a page with a multi-step form where a client will be filling in information regarding their cargo, the destination, the cargo location,...)
