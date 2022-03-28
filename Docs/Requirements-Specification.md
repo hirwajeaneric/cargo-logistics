@@ -15,13 +15,30 @@ Here are the system features I was thinking of including in the system.
 
 ### System features:
 1. Landing page
--    Available services
+	
+-       Available services
 -            Ocean Import / Export
              AIR FREIGHT FORWARDING
-             HOUSEHOLD GOODS & AUTOS
-2. Sign in form
-3. Login form or login section on the landing page for those who have accounts.
-4. Send Cargo: (This is a page with a multi-step form where a client will be filling in information regarding their cargo, the destination, the cargo location,...)
+	     LAND TRANSFER
+             HOUSEHOLD FORWARDING
+	     
+-	POPUPS => Sign in form
+- 	After signing in the user will be given a response page with also a link with a description of how he/she could login from the landing page.
+-	POPUPS => Login form or login section on the landing page for those who have accounts.
+-	On navigation: There should be 2 other buttons (Login, Sign in), after login, the two buttons should change to my account and the name of the user.
+
+	
+2. User account page (Holds user data, history of services,...)
+
+-        Account information)
+	     Cargo that they send + The progress
+         etc
+	
+         Other Commands like:
+		 - Logout
+		 - Modify account,...
+ 	
+3. Send Cargo: (This is a page with a multi-step form where a client will be filling in information regarding their cargo, the destination, the cargo location,...)
 	The steps of the form:
 	a. User Information: 
 
@@ -42,11 +59,9 @@ Here are the system features I was thinking of including in the system.
 
 	c. Cargo Description: 
 
-- 		Cargo name, 
-		size(length, width), 
-		weight, 
+- 		size(length, width), 
+		weight(kg), 
 		category, 
-		description, 
 		perishable/non-perishable.
 
 	d. Reciever Information
@@ -60,13 +75,15 @@ Here are the system features I was thinking of including in the system.
 
 	e. Destination/Reciever address: 
 
-- 		When do should it be taken, 
-		Country, 
+- 		Country, 
 		District/City, 
 		postal code,
 		Street Address, 
 		House number		
 
+-       f. Terms and Conditions: 
+	       	If the user accepts terms and conditions, they will be first clicking on a check button to be allowed to click on NEXT BUTTON.
+  	    	Otherwise, they will not access the Payment information.
 
 	f. Payment information:
 
@@ -74,19 +91,8 @@ Here are the system features I was thinking of including in the system.
 		Credit card number
 		.......
 
-5. Response page (For a successful transaction)
-6. Response page (For successful account registration)
-7. User Account page (Where the user will be finding all their information including:
-
--        Account information)
-	     Cargo that they send + The progress
-         etc
-	
-         Other Commands like:
-		 - Logout
-		 - Modify account,...
-
-9. About Page
-10. Contact Page
-11. Services Page
-12. Dashboard
+4. Response page (For a successful transaction)
+5. About Page
+6. Contact Page
+7. Services Page
+8. Dashboard 	
