@@ -42,5 +42,37 @@ After the cargo reaches the destination, the send will be notified about the suc
 			- Phone number 
 			- Date of birth
 		* User/Cargo Location: 
+			- Country 
+			- District/City
+			- Postal code 
+			- Street Address 
+			- House number
+		* Cargo Description
+			- Size(Length, width),
+			- Weight(kg)
+			- Category
+			- Perishable/non-perishable.
+		* Reciever Information
+			- First name 
+			- Last name
+			- Gender 
+			- Email address 
+			- Phone number 
+			- Date of birth 		
+		* Terms and Conditions: 
+		* Payment information:
+11. **The sytem should calculate the price of the service according to information filled in by the user in the form**: According to the information specified above about the cargo size, weight, type, etc, the system shall automatically generate the price it shall take the user to send that cargo.
+12. THe system should have at least the following pages:
+	* Landing page
+	* About page
+	* Contact page
+	* Services page
+	* Dashboard for system administrators
+	* User account page
 
-
+### Non-Functional Requirements
+1.  **Safety requirements**: 
+	* The user will be be able to continue to the last step of the form which contains payment information only after they have read, and clicked on the check button that confirms that they accept the terms and conditions provided by the transfer company and system.
+	* Only users with valid accounts will be allowed to login in the system.
+	* Users without accounts will not be allowed to login in the system unless they first sign up, and get confirmed accounts.
+	*  
