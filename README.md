@@ -11,9 +11,9 @@ The system administrators who are the manager's of the system in the company wil
 
 After the cargo reaches the destination, the send will be notified about the success of the transfter.
 
-### System features. 
+## System features. 
 
-#### Functional Requirements.
+### Functional Requirements.
 1. **The system should allow the user to login and create an account**: The system should allow users to create accounts,login and have a user space where they will be able to check on the progress of their transfer and other information like their credentials.
 2. **The system should allow users to modify their credentials.**: The system should allow users to modify their credentials like their username, passowrd, image, etc.
 3. **The system should have a landing page**: The system should provide a landing page on which users will be reaching on when they call the domain name of the system. 
@@ -26,5 +26,21 @@ After the cargo reaches the destination, the send will be notified about the suc
 5. **The system should provide a ***pop-up*** signing form**: The system should display a popup form when ever the a user clicks on the signup button in the upper-right corner of the page.
 6. **The system should provide a ***pop-up*** login form**: The system should display a popup login form whenever the login button is clicked on in the upper-right corner of the page.
 7. **When ever the user has successfully loged in the system, the user login and signing buttons will be changed**: When ever a user successfully logs in the system. The login button will be holding the user's name and then the signing button will be changing to logout button.
-8. **When ever a user has successfully created an account, they will be immediately redirected to the landing page of the system but loged in.**
-9. **WHen the user 
+8. **When ever a user has successfully created an account, they should be immediately redirected to the landing page of the system but loged in.**
+9. **The user account on the system should hold user data and his history**: The user account should contain details such as:
+	* Credentials like: Username, full names, national id number, email address, phone number and othes.
+	* Information related to the cargo he sent.
+	* Progress of the cargo transportation
+	* Commands or buttons that allow the user to logout and modify their account.
+10. **The system should provide a form a user will be using to fill in a transfer request**: When ever a user clicks on the transfer button on the navigation bar, they should be presented with a multi-steps form to fill in all required information to make the transfer request complete.
+	* These steps are as follow:
+		* User information:
+			- First name
+			- Last name 
+			- Gender
+			- Email address 
+			- Phone number 
+			- Date of birth
+		* User/Cargo Location: 
+
+
