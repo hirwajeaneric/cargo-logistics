@@ -71,8 +71,30 @@ After the cargo reaches the destination, the send will be notified about the suc
 	* User account page
 
 ### Non-Functional Requirements
-1.  **Safety requirements**: 
+1. **Usability requirements**:
+	* The system is allowed for anyone who needs information about the services we provide, those who want to transfer things, and those who have accounts in.
+	* The system must also allow administrators to manage information and data issued by users such as their transfer request forms. 
+2. **Security requirements**: 
 	* The user will be be able to continue to the last step of the form which contains payment information only after they have read, and clicked on the check button that confirms that they accept the terms and conditions provided by the transfer company and system.
 	* Only users with valid accounts will be allowed to login in the system.
 	* Users without accounts will not be allowed to login in the system unless they first sign up, and get confirmed accounts.
-	*  
+	* The system Dashboard shall only be accessed by system administrators with specific credentials that differentiate them from common users.
+2. **Availability requirements**
+	* The system will always be available 24 hours for 7 days.
+3. **Safety requirements**
+	* To ensure that users do not loose their data, the system must be saving user information in a trusted and secured database, in addition to a secured domain name, hosting service, and an SSL Certificate.
+4. **Flexibility requirements**
+	* The system must be flexible enough to allow user to use it in all mostly used devices like: __Phones, Tablet,__ and __Computer__ with good interfaces that allows users to submit their transfer request with ease.
+5. **Portability requirements** 
+	* The system must work properly in all devices
+6. **aintainability requirements**
+	* The system must be able to accept and integrate new features or updated
+versions of it without interrupting other system functionalities. 
+7. **Cost requirements**: 
+	* To use the system must be free for everyone. It must not require any subscription.
+	* People will only be paying only when they are issuing a transfer request.
+8. **Supportability requirements**:
+	* The system should support more than 5000 users at a time using, sending requests and getting responses from system servers all at a time.
+9. **Reliability requirements**:
+The system must be able to perform all the assigned tasks by removing any
+reason for a user to move from their location in the process of transfering their materials. It’s reliability shall be measured successful at 98% success rate.
