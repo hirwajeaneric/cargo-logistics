@@ -11,7 +11,7 @@ The system administrators who are the manager's of the system in the company wil
 
 After the cargo reaches the destination, the send will be notified about the success of the transfter.
 
-![Express logistics interface](https://www.google.com/imgres?imgurl=https%3A%2F%2Fkrify.co%2Fwp-content%2Fuploads%2F2018%2F11%2FLogistics-website-design-and-development.jpg&imgrefurl=https%3A%2F%2Fkrify.co%2Flogistics-website-design-development-company-india%2F&tbnid=5U8qRthKe9FtkM&vet=12ahUKEwir9LGj2pv3AhUEXxoKHe1WCfUQMygQegUIARDaAQ..i&docid=6umnlUtC3ynYFM&w=1024&h=500&q=logistics%20website%20design&ved=2ahUKEwir9LGj2pv3AhUEXxoKHe1WCfUQMygQegUIARDaAQ)
+![Express logistics interface](https://github.com/hirwajeaneric/cargo-logistics/blob/main/Docs/Logistics-website-design-and-development.jpg)
 
 ## System features. 
 
