@@ -1,100 +1,30 @@
-# EXPRESS Logistics
-## System Overview
-EXPRESS logists is a web-based system that will allow people who want to send their stuffs (materials), and other properties between themselves to send and receive them without moving from their homes or locations.
+# EXPRESS LOGISTICS
+## System Overview.
 
-Users of the system will be filling in all the required information about what they want to send, and more details, where they are currently located, where the receiver is located, and more other information to make the transfer efficient.
+EXPRESS Logistics is a web-based system that allows people to send, and recieve whatever movable properties and materials between themselves in any location around the world.
+
+Users of the system will be filling in all the required information about what they want to send, and more details, where they are currently located, the reciever's address, and more other information to facilitate the transfer.
 
 As the user fills out the form, they will also be provided with a payment system form that they will use to secure their order.
 
-The system administrators who are the owners of the system will be recognizing that there is a request sent by a user, and therefore go get the cargo and transport it to the destination address.
+The system administrators who are the manager's of the system in the company will be recognizing that there is a request sent by a user, and therefore go get the cargo and transport it to the specified destination.
 
-After the cargo reaches the destination, the sender will be notified about the success of the transportation.
+After the cargo reaches the destination, the send will be notified about the success of the transfter.
 
-### Overall Description
+### System features. 
 
-
-Bellow are the main system features:
-### System features:
-#### Functional Requirements
-1. Landing page
-	
--       Available services
--            Ocean Import / Export
-             AIR FREIGHT FORWARDING
-	     LAND TRANSFER
-             HOUSEHOLD FORWARDING
-	     
--	POPUPS => Sign in form
-- 	After signing in the user will be given a response page with also a link with a description of how he/she could login from the landing page.
--	POPUPS => Login form or login section on the landing page for those who have accounts.
--	On navigation: There should be 2 other buttons (Login, Sign in), after login, the two buttons should change to my account and the name of the user.
-
-	
-2. User account page (Holds user data, history of services,...)
-
--        Account information)
-	     Cargo that they send + The progress
-         etc
-	
-         Other Commands like:
-		 - Logout
-		 - Modify account,...
- 	
-3. Send Cargo: (This is a page with a multi-step form where a client will be filling in information regarding their cargo, the destination, the cargo location,...)
-	The steps of the form:
-	a. User Information: 
-
-- 		First name, 
-		last name, 
-		gender,
-		email address, 
-		phone number, 
-		date of birth, 	
-
-	b. User/Cargo Location: 
-
-- 		Country, 
-		District/City,
-		postal code, 
-		Street Address, 
-		House number
-
-	c. Cargo Description: 
-
-- 		size(length, width), 
-		weight(kg), 
-		category, 
-		perishable/non-perishable.
-
-	d. Reciever Information
-
-- 		First name, 
-		last name,
-		gender, 
-		email address, 
-		phone number, 
-		date of birth, 			
-
-	e. Destination/Reciever address: 
-
-- 		Country, 
-		District/City, 
-		postal code,
-		Street Address, 
-		House number		
-
--       f. Terms and Conditions: 
-	       	If the user accepts terms and conditions, they will be first clicking on a check button to be allowed to click on NEXT BUTTON.
-  	    	Otherwise, they will not access the Payment information.
-
-	f. Payment information:
-
-- 		According to the information specified above about the cargo size, weight, type, ... the system shall automatically generate the price it shall take the user to send that cargo.	
-		Credit card number
-		.......
-
-4. Response page (For a successful transaction)
-5. About Page
-6. Contact Page
-7. Services Page
-8. Dashboard 	
+#### Functional Requirements.
+1. **The system should allow the user to login and create an account**: The system should allow users to create accounts,login and have a user space where they will be able to check on the progress of their transfer and other information like their credentials.
+2. **The system should allow users to modify their credentials.**: The system should allow users to modify their credentials like their username, passowrd, image, etc.
+3. **The system should have a landing page**: The system should provide a landing page on which users will be reaching on when they call the domain name of the system. 
+4. **The landing page of the system should contain detailed information about services provided by the system**: The system should provide details about services offered by the system such as: 
+	* Ocean Import/Export
+	* Air Freight Forwarding
+	* Land Way Tranfer
+	* Household Forwarding/Transportation
+	Other information like the location, contacts, and others will also be provided on that page.
+5. **The system should provide a ***pop-up*** signing form**: The system should display a popup form when ever the a user clicks on the signup button in the upper-right corner of the page.
+6. **The system should provide a ***pop-up*** login form**: The system should display a popup login form whenever the login button is clicked on in the upper-right corner of the page.
+7. **When ever the user has successfully loged in the system, the user login and signing buttons will be changed**: When ever a user successfully logs in the system. The login button will be holding the user's name and then the signing button will be changing to logout button.
+8. **When ever a user has successfully created an account, they will be immediately redirected to the landing page of the system but loged in.**
+9. **WHen the user 
