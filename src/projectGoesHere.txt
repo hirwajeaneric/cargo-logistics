@@ -1,0 +1,1 @@
+All the project files and folders should go in this directory.
