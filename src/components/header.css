@@ -1,0 +1,62 @@
+.navbar{
+    background:rgb(184, 183, 183);
+    padding:10px;
+    display:flex;
+    width:100%;
+    box-shadow:0px 10px 15px black ;
+}
+.topnav a{
+    float: right;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 80px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    background: rgb(184, 183, 183);
+   
+}
+.topnav a:hover{ 
+    color:green;
+}
+.search{
+    margin-left: 30px;
+    margin-top: 40px;
+    color:black; 
+}
+.login a{
+
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px; 
+    float: left;
+    font-size: 15px;
+    color: black;
+    background-color:rgb(184, 183, 183);
+
+}
+.login a:hover{
+    color:green;
+}
+.icon1{
+    margin-left: 30px;
+    margin-top:40px;
+    color:rgb(0, 162, 255); 
+}
+.icon2{
+    margin-left: 10px;
+    margin-top:40px;
+    color:red; 
+}
+.icon3{
+    margin-left: 10px;
+    margin-top:40px;
+    color:rgb(212, 87, 129);
+}
+.icon4{
+    margin-left: 10px;
+    margin-top:40px;
+    color:rgb(0, 132, 255); 
+}
