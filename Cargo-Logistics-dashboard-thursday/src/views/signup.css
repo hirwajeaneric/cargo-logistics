@@ -1,0 +1,51 @@
+.signup-form{
+    height: 70vh;
+    width: 100%;
+    background-color: none;
+   
+    
+    
+    display: flex;
+ 
+}
+.signup-f1{
+    height: 100%;
+    width:60%;
+     background-image: url('../assets/pexels1.jpeg') ;;
+   
+
+}
+.signup-f2{
+    height: 100%;
+    width:40%;
+    background:rgba(0, 0, 0, 0.884);
+   
+    
+    display: block;
+
+}
+
+.signup-f3{
+    height: 80%;
+    width:90%;
+    background:none;
+    margin-left: 5%;
+    margin-top: 2%;
+
+}
+.header-f1{
+    background: none;
+    height: 30Px;
+    width:90% ;
+    margin-left: 5%;
+
+    color: black;
+    text-align: center;
+  
+}
+button{
+    
+    
+    background-color: black;
+}
+

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qb#0c(&_)1-s#971e(sv82c2yg^8sao-63atp*o)(v6%g*=bsn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,15 +37,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    'rest_framework',#pip3 install psycopg2
+    'rest_framework.authtoken',
+    'rest_framework_swagger',
     'knox',
-    'users',
+    'corsheaders',
+    'cargo',
 ]
+REST_FRAMEWORK={
+    'DEFAULT_AUTHENTICATION_CLASSES':('knox.auth.TokenAuthentication',),
+    'TEST_REQUEST_RENDERER_CLASSES': [
+        'rest_framework.renderers.MultiPartRenderer',
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.TemplateHTMLRenderer'
+    ],
+    'DEFAULT_SCHEMA_CLASSES':'rest_framework.schemas.coreapi.AutoSchem',
+}
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -77,11 +92,24 @@ WSGI_APPLICATION = 'drf_auth.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': {                                                                          
+        'ENGINE': 'django.db.backends.mysql',                                        
+        'NAME': 'usersss',                                                                    
+        'USER': 'root',                                                               
+        'PASSWORD': 'Salma3422', 
+        'HOST': 'localhost',                                                          
+        'PORT': '3306', #python3 manage.py migration                                                                      
+   },
+   'TEST': {
+        'ENGINE': 'django.db.backends.mysql',                                        
+        'NAME': 'usersssTest',                                                                    
+        'USER': 'root',                                                               
+        'PASSWORD': 'Salma3422', 
+        'HOST': 'localhost',                                                          
+        'PORT': '3306', #python3 manage.py migration 
+        },   
 }
+
 
 
 # Password validation
@@ -102,6 +130,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS =(
+    "django.contrib.auth.backends.ModelBackend",
+     
+    
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -123,8 +156,42 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CORS_ALLOWED_ORIGINS = [
+ #   "https://example.com",
+  #  "https://sub.example.com",
+   # "http://localhost:8080",
+   # "http://127.0.0.1:9000",
+]
 
-REST_FRAMEWORK={
-    'DEFAULT_AUTHENTICATION_CLASSES':('knox.auth.TokenAuthentication',)
-}
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    #r"^https://\w+\.example\.com$",
+]
+
+
+#CORS_URLS_REGEX = r"^/api/.*$"
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+
+
+

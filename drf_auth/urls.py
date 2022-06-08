@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from .router import router
+from cargo import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('users.urls')),
+    path('api/auth/', include('cargo.urls')),
+    path('api/',include(router.urls)),
+    
+    # path('',views.schema_view)
     
 ]
