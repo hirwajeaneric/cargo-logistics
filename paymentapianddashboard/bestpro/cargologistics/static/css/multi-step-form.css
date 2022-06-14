@@ -1,0 +1,118 @@
+
+/* Style for the page */
+.multi-step{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+}
+
+.multi-step-overlay {
+    width: 70%;
+}
+
+.multi-step h1 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.multi-step .introduction {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.multi-step h3 {
+    margin: 0 0 20px;
+}
+
+.multi-step form {
+    background-color: rgb(213, 213, 213);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.multi-step form label {
+    padding: 0 0 10px;
+}
+
+.multi-step form p input[type="text"],
+.multi-step form p input[type="text"], 
+.multi-step form p input[type="submit"], 
+.multi-step form p input[type="password"],
+.multi-step form p input[type="phone"], 
+.multi-step form p input[type="email"],
+.multi-step form p input[type="date"],
+.multi-step form p select,
+.multi-step form p option, 
+.multi-step form p textarea,
+.multi-step form p input[type="number"] {
+    padding: 5px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90%;
+    width: 100% !important;
+    border: 1px solid gray;
+    border-radius: 5px !important;
+}
+
+
+/* Style the form */
+#transferForm {
+    margin: 0 auto;
+    padding: 40px;
+    width: 100%;
+    /* min-width: 300px; */
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+  button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
